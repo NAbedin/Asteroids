@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1,
+#title {
+  font-size: 40px;
+}
+h1,
+h2 {
+  height: 200px;
+  width: 400px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  line-height: 200px;
+}
+#title,
+#instructions {
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  margin-left: -300px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#title {
+  margin-top: -350px;
+}
+#instructions {
+  margin-top: 310px;
+}
+button {
+  top: 50%;
+  left: 50%;
+  margin-left: -80px;
+  margin-top: -40px;
+  position: absolute;
+  height: 80px;
+  width: 160px;
+  border-radius: 6px;
+  background-color: magenta;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: white;
+  border: 0;
+}
+button:hover {
+  border: 2px solid white;
+  color: rgb(46, 47, 75);
+  box-shadow: #2b2c2c;
+  background-color: cyan;
+  box-shadow: 0 0 15px rgb(220, 254, 255);
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  align-content: space-around;
+  background-color: #2b2c2c;
+  display: grid;
+  justify-content: center;
+}
+canvas {
+  height: 600px;
+  border: 1px solid white;
+  background-image: url("assets/backdrop.jpg");
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+#gameoverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -200px;
+  height: 400px;
+  width: 400px;
+  background-color: rgba(46, 47, 75, 0.5);
+  border: 2px solid white;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+#gameoverlay.visible {
+  pointer-events: all;
+  opacity: 1;
+}
