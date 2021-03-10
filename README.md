@@ -9,3 +9,6 @@ It is based on the classic Atari game, Asteroids.
 - Life and score counter
 - Collision detection
 - Larger asteroids break into smaller ones
+
+##### Live Demo
+https://www.nazaninabedin.com/asteroids/index.html
